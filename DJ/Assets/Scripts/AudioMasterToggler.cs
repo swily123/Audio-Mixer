@@ -6,6 +6,7 @@ public class AudioMasterToggler : MonoBehaviour
     [SerializeField] private AudioMixerGroup _masterGroup;
     [SerializeField] private AudioMixer _audioMixer;
 
+    private float minAudioValue = -80;
     private bool _isPlaying = true;
 
     public void ToggleMusic()
@@ -15,6 +16,6 @@ public class AudioMasterToggler : MonoBehaviour
         if (_isPlaying)
             _audioMixer.SetFloat(_masterGroup.name, 0);
         else
-            _audioMixer.SetFloat(_masterGroup.name, -80);
+            _audioMixer.SetFloat(_masterGroup.name, minAudioValue);
     }
 }
