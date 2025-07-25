@@ -1276,7 +1276,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96202cf014e7fe1428378716d29d7bb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _slider: {fileID: 0}
+  _masterGroup: {fileID: 24300002, guid: 7016920baade049478d9bb1affa3b5a3, type: 2}
   _audioMixer: {fileID: 24100000, guid: 7016920baade049478d9bb1affa3b5a3, type: 2}
 --- !u!1 &847379545
 GameObject:
@@ -1407,8 +1407,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 896097366}
-        m_TargetAssemblyTypeName: AudioVolumeChanger, Assembly-CSharp
-        m_MethodName: SetMasterVolume
+        m_TargetAssemblyTypeName: VolumeSlider, Assembly-CSharp
+        m_MethodName: SetVolume
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1427,11 +1427,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 896097363}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96202cf014e7fe1428378716d29d7bb5, type: 3}
+  m_Script: {fileID: 11500000, guid: e0a572141652af0438c9688b7fd12326, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _slider: {fileID: 896097365}
   _audioMixer: {fileID: 24100000, guid: 7016920baade049478d9bb1affa3b5a3, type: 2}
+  _group: {fileID: 24300002, guid: 7016920baade049478d9bb1affa3b5a3, type: 2}
 --- !u!1 &1034304622
 GameObject:
   m_ObjectHideFlags: 0
@@ -1902,8 +1902,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1100494152}
-        m_TargetAssemblyTypeName: AudioVolumeChanger, Assembly-CSharp
-        m_MethodName: SetMusicVolume
+        m_TargetAssemblyTypeName: VolumeSlider, Assembly-CSharp
+        m_MethodName: SetVolume
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1922,11 +1922,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1100494149}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96202cf014e7fe1428378716d29d7bb5, type: 3}
+  m_Script: {fileID: 11500000, guid: e0a572141652af0438c9688b7fd12326, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _slider: {fileID: 1100494151}
   _audioMixer: {fileID: 24100000, guid: 7016920baade049478d9bb1affa3b5a3, type: 2}
+  _group: {fileID: -1220660838462896728, guid: 7016920baade049478d9bb1affa3b5a3, type: 2}
 --- !u!1 &1184332452
 GameObject:
   m_ObjectHideFlags: 0
@@ -3041,8 +3041,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1977860691}
-        m_TargetAssemblyTypeName: AudioVolumeChanger, Assembly-CSharp
-        m_MethodName: SetEffectsVolume
+        m_TargetAssemblyTypeName: VolumeSlider, Assembly-CSharp
+        m_MethodName: SetVolume
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3061,11 +3061,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1977860688}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96202cf014e7fe1428378716d29d7bb5, type: 3}
+  m_Script: {fileID: 11500000, guid: e0a572141652af0438c9688b7fd12326, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _slider: {fileID: 1977860690}
   _audioMixer: {fileID: 24100000, guid: 7016920baade049478d9bb1affa3b5a3, type: 2}
+  _group: {fileID: 7429215435175752347, guid: 7016920baade049478d9bb1affa3b5a3, type: 2}
 --- !u!1 &2025422801
 GameObject:
   m_ObjectHideFlags: 0
