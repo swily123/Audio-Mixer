@@ -16,9 +16,19 @@ public class VolumeSlider : MonoBehaviour
         _slider = GetComponent<Slider>();
     }
 
-    public void SetVolume()
+    private void OnEnable()
     {
-        float volume = Mathf.Max(Mathf.Log10(_slider.value) * 20, -80);
+        _slider.onValueChanged.AddListener(SetVolume);
+    }
+
+    private void OnDisable()
+    {
+        _slider.onValueChanged.RemoveListener(SetVolume);
+    }
+
+    public void SetVolume(float value)
+    {
+        float volume = Mathf.Max(Mathf.Log10(value) * 20, -80);
 
         _audioMixer.SetFloat(_group.name, volume);
     }
